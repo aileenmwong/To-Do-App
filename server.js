@@ -6,6 +6,7 @@ const methodOverride = require('method-override')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(methodOverride('_method'));
 
 app.get('/', function(req, res){
   res.render('todo-home')

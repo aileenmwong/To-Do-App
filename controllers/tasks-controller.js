@@ -33,9 +33,7 @@ tasksController.create = (req, res) => {
     category: req.body.category,
   })
   .then (tasks => {
-    res.render('./todo-add', {
-      data: tasks,
-    });
+    res.redirect('/tasks');
   })
   .catch(err => {
     res.status(500).json(err);
@@ -61,10 +59,9 @@ tasksController.update = (req, res) => {
 tasksController.delete = (req, res) => {
   Task.delete(req.params.id)
   .then(() => {
-    res.json({
-      message: 'Task deleted successfully!',
-    });
-    }).catch(err => {
+    res.redirect('/tasks');
+    })
+  .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });

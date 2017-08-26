@@ -8,8 +8,9 @@
       <div id="infoStatus"><%=tasks.status%></div>
       <div id="infoDescription"><%=tasks.category%></div>
       <div id="infoButtons">
-        <button class="bigButton">EDIT</button>
-        <button class="bigButton">DELETE</button>
+      <a href="/tasks"><button class="bigButton" id="edit">EDIT</button></a>
+      <form action="/tasks/<%= tasks.id %>?_method="DELETE " method="Post">
+      <button class="bigButton" id="delete">DELETE</button>
       </div>
     </div>
 
