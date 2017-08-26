@@ -1,0 +1,203 @@
+/*header*/
+
+#headerwrapper {
+  display: flex;
+  background-color: lightblue;
+}
+
+#leftheader {
+  flex: 1;
+}
+
+#rightheader {
+  flex: 1;
+}
+
+#logo {
+  background-image: url("../assets/hands.png");
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+/*  border: 1px solid black;*/
+}
+
+#navcontainer {
+/*  border: 1px solid black;*/
+}
+
+ul {
+  list-style: none;
+  text-align: right;
+
+}
+
+li {
+  font-family: 'Raleway', sans-serif;
+  display: inline;
+  background-color: lightyellow;
+  margin: 10px;
+  padding: 10px 30px;
+}
+
+.navItem {
+  text-decoration: none;
+}
+
+.navItem:hover {
+  color: hotpink;
+}
+
+/*home page*/
+
+#welcomewrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Shadows Into Light Two', cursive;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding: 50px;
+/*  border: 1px solid black;*/
+}
+
+.bigButton {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+
+/*footer*/
+
+#footerwrapper {
+  margin: 30px 0 0 0;
+  padding: 20px;
+  text-align: center;
+  background-color: lightblue;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#footerText {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+/*To Do List*/
+
+#toDoItem {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 50%;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#toDoItemTop {
+  display: flex;
+  background-color: lightyellow;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#task {
+  flex: 1;
+}
+
+#status {
+  flex: 1;
+  text-align: right;
+}
+
+#toDoItemBottom {
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#category {
+  flex: 1;
+}
+
+#taskbuttons {
+  flex: 1;
+  text-align: right;
+}
+
+/*Add Item*/
+
+#addItemWrapper{
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 50%;
+  padding: 8px;
+}
+
+#addItemHead {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#addItemTop {
+  display: flex;
+}
+
+#addItemTask {
+  flex: 1;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#addItemCategory {
+  flex: 1;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#addItemDescription {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#buttonDiv {
+  text-align: center;
+  margin: 20px;
+}
+
+/*Information*/
+
+#infoWrapper {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 5px;
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#infoTask {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 30px;
+  background-color: lightyellow;
+  text-align: center;
+  padding: 5px;
+}
+
+#infoStatus {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#infoDescription {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#infoButtons {
+  text-align: right;
+}
+
