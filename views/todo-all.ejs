@@ -1,0 +1,28 @@
+<% include ./partials/boilerplate %>
+<% include ./partials/header %>
+  <main>
+<div id="addNew">
+  <a href="/tasks/add"><button class="bigButton" id="addNewButton">ADD NEW TASK</button></a>
+</div>
+<% for (let tasks of data) { %>
+
+    <div id="toDoItem">
+      <div id="toDoItemTop">
+        <div id="task"><%= tasks.title %></div>
+        <div id="status"><%= tasks.status %></div>
+      </div>
+      <div id="toDoItemBottom">
+        <div id="category"><%= tasks.category %></div>
+        <div id="taskbuttons">
+          <a href="/tasks/<%= tasks.id %>"><button class="bigButton" id="info">Info</button></a>
+          <a href="/tasks"><button class="bigButton" id="edit">Edit</button></a>
+          <button class="bigButton" id="delete">Delete</button>
+          </div>
+      </div>
+    </div>
+<%}%>
+
+
+  </main>
+<% include ./partials/footer %>
+<% include ./partials/end %>

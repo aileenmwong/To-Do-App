@@ -1,0 +1,35 @@
+<% include ./partials/boilerplate %>
+<% include ./partials/header %>
+<%# this needs to be a form %>
+  <main>
+    <div>
+      <div id=addItemWrapper>
+       <form method='POST' action='/tasks'>
+        <h2 id="addItemHead">Add A New Item</h2>
+        <div id="addItemTop">
+          <div id="addItemTask">
+            <input name="title" type="text" placeholder="Task" />
+          </div>
+          <div id="addItemStatus">
+            <input name="status" type="text" placeholder="Status" />
+          </div>
+        </div>
+        <div id="addItemBottom">
+          <div id="addItemDescription">
+            <input name="category" type="text" placeholder="Category" >
+          </div>
+        </div>
+          <div id="buttonDiv">
+            <input class="bigButton" type="submit" value="SUBMIT" />
+            </form>
+          </div>
+<!--         <div id="buttonDiv">
+          <button class="bigButton">SUBMIT</button>
+        </div> -->
+      </div>
+    </div>
+
+  </main>
+<% include ./partials/footer %>
+<% include ./partials/end %>
+

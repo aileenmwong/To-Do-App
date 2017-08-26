@@ -91,9 +91,10 @@ li {
 
 #toDoItem {
   margin: 0 auto;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   width: 50%;
   font-family: 'Shadows Into Light Two', cursive;
+  padding: 10px;
 }
 
 #toDoItemTop {
@@ -201,3 +202,7 @@ li {
   text-align: right;
 }
 
+#addNew {
+  text-align: center;
+  margin: 20px;
+}

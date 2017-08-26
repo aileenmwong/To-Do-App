@@ -1,0 +1,24 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "To Do App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:aileenmwong/To-Do-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "nodemon": "^1.11.0",
+    "pg-promise": "^6.5.1"
+  }
+}

@@ -1,0 +1,18 @@
+<% include ./partials/boilerplate %>
+<% include ./partials/header %>
+
+  <main>
+
+    <div id="infoWrapper">
+      <div id="infoTask"><%=tasks.title%></div>
+      <div id="infoStatus"><%=tasks.status%></div>
+      <div id="infoDescription"><%=tasks.category%></div>
+      <div id="infoButtons">
+        <button class="bigButton">EDIT</button>
+        <button class="bigButton">DELETE</button>
+      </div>
+    </div>
+
+  </main>
+<% include ./partials/footer %>
+<% include ./partials/end %>
