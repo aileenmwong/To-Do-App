@@ -1,19 +1,25 @@
 <% include ./partials/boilerplate %>
 <% include ./partials/header %>
 
-  <main>
+  <main class="site-content">
 
     <div id="infoWrapper">
       <div id="infoTask"><%=tasks.title%></div>
       <div id="infoStatus"><%=tasks.status%></div>
       <div id="infoDescription"><%=tasks.category%></div>
       <div id="infoButtons">
-      <a href="/tasks"><button class="bigButton" id="edit">EDIT</button></a>
-      <form action="/tasks/<%= tasks.id %>?_method="DELETE " method="Post">
-      <button class="bigButton" id="delete">DELETE</button>
+        <a href="/tasks"><button class="bigButton" id="edit">EDIT</button></a>
+        <form action="/tasks/<%= tasks.id %>?_method="DELETE " method="Post">
+        <button class="bigButton" id="delete">DELETE</button>
+
+
       </div>
     </div>
 
+
   </main>
+  <div id="back">
+  <a href="/tasks"><button class="bigButton">BACK</button></a>
+  </div>
 <% include ./partials/footer %>
 <% include ./partials/end %>

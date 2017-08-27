@@ -1,6 +1,6 @@
 <% include ./partials/boilerplate %>
 <% include ./partials/header %>
-  <main>
+  <main class="site-content">
 <div id="addNew">
   <a href="/tasks/add"><button class="bigButton" id="addNewButton">ADD NEW TASK</button></a>
 </div>
@@ -16,11 +16,10 @@
         <div id="taskbuttons">
           <a href="/tasks/<%= tasks.id %>"><button class="bigButton" id="info">Info</button></a>
           <a href="/tasks"><button class="bigButton" id="edit">Edit</button></a>
-          <form action="/tasks/<%= tasks.id %>?_method=Delete " method="Post">
-          <button class="bigButton" id="delete">Delete</button>
+            <form action="/tasks/<%= tasks.id %>?_method=Delete " method="Post">
+            <button class="bigButton" id="delete">Delete</button>
           </form>
-
-          </div>
+        </div>
       </div>
     </div>
 <%}%>
