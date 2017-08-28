@@ -138,8 +138,14 @@ li {
 }
 
 /*Add Item*/
+#addItemBoxes {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-#addItemWrapper{
+.itemWrapper{
   margin: 0 auto;
   border: 1px solid black;
   width: 50%;
@@ -147,8 +153,11 @@ li {
 }
 
 #addItemHead {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Shadows Into Light Two', cursive;
   text-align: center;
+  background-color: lightyellow;
+  font-size: 30px;
+  padding: 5px;
 }
 
 #addItemTop {
@@ -179,12 +188,16 @@ li {
 #infoWrapper {
   margin: 0 auto;
   border: 1px solid black;
-  padding: 5px;
+  padding: 8px;
   width: 50%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+#editWrapper {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 #infoTask {

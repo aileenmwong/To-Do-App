@@ -46,11 +46,9 @@ tasksController.update = (req, res) => {
     status: req.body.status,
     category: req.body.category,
   }, req.params.id).then(tasks => {
-    res.json({
-      message: 'Task updated successfully!',
-      data: tasks,
-    });
-  }).catch(err => {
+    res.redirect('/tasks');
+    })
+  .catch(err => {
     console.log(err);
     res.status(500).json(err);
   });
