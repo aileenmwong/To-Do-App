@@ -1,0 +1,28 @@
+<% include ./partials/boilerplate %>
+<% include ./partials/header %>
+
+      <div>
+        <div class="itemWrapper" id="editWrapper">
+         <form method='post' action='/tasks/<%= data.id %>?_method=PUT'>
+          <h2 id="addItemHead">Edit Item</h2>
+          <div id="addItemTop">
+            <div id="addItemTask">
+              <input name="title" type="text" placeholder="<%= data.title %>" />
+            </div>
+            <div id="addItemStatus">
+              <input name="status" type="text" placeholder="<%= data.status %>" />
+            </div>
+          </div>
+          <div id="addItemBottom">
+            <div id="addItemDescription">
+              <input name="category" type="text" placeholder="<%= data.category %>" >
+            </div>
+          </div>
+            <div id="buttonDiv">
+              <input class="bigButton" type="submit" value="SUBMIT" />
+            </div>
+        </div>
+      </div>
+
+<% include ./partials/footer %>
+<% include ./partials/end %>

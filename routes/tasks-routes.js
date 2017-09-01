@@ -13,6 +13,8 @@ taskRoutes.put('/:id', tasksController.update);
 taskRoutes.get('/:id', tasksController.show);
 taskRoutes.delete('/:id', tasksController.delete);
 
+taskRoutes.get('/:id/edit', tasksController.edit);
+
 
 
 module.exports = taskRoutes;

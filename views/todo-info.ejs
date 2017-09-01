@@ -3,39 +3,16 @@
 
   <main class="site-content">
 
-  <div id="addItemBoxes">
+    <div id="addItemBoxes">
 
       <div id="infoWrapper">
         <div id="infoTask"><%=tasks.title%></div>
         <div id="infoStatus"><%=tasks.status%></div>
         <div id="infoDescription"><%=tasks.category%></div>
         <div id="infoButtons">
-          <a href="/tasks"><button class="bigButton" id="edit">EDIT</button></a>
-          <form action="/tasks/<%= tasks.id %>?_method="DELETE " method="Post">
+          <a href="/tasks/<%= tasks.id %>/edit"><button class="bigButton" id="edit">EDIT</button></a>
+          <form action="/tasks/<%= tasks.id %>?_method=DELETE" method="Post">
           <button class="bigButton" id="delete">DELETE</button>
-        </div>
-      </div>
-
-      <div>
-        <div class="itemWrapper" id="editWrapper">
-         <form method='POST' action='/update/<%=tasks.id %>''>
-          <h2 id="addItemHead">Edit Item</h2>
-          <div id="addItemTop">
-            <div id="addItemTask">
-              <input name="title" type="text" placeholder="Task" />
-            </div>
-            <div id="addItemStatus">
-              <input name="status" type="text" placeholder="Status" />
-            </div>
-          </div>
-          <div id="addItemBottom">
-            <div id="addItemDescription">
-              <input name="category" type="text" placeholder="Category" >
-            </div>
-          </div>
-            <div id="buttonDiv">
-              <input class="bigButton" type="submit" value="SUBMIT" />
-            </div>
         </div>
       </div>
     </div>

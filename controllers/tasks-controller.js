@@ -54,6 +54,33 @@ tasksController.update = (req, res) => {
   });
 };
 
+tasksController.update = (req, res) => {
+  console.log(req.body);
+  Task.update({
+    title: req.body.title,
+    status: req.body.status,
+    category: req.body.category,
+  }, req.params.id).then(tasks => {
+    res.redirect(`/tasks/${req.params.id}`);
+    })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
+};
+
+tasksController.edit = (req, res) => {
+  Task.findById(req.params.id)
+  .then(tasks => {
+    res.render('todo-edit', {
+      data: tasks,
+    });
+  }).catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
+};
+
 tasksController.delete = (req, res) => {
   Task.delete(req.params.id)
   .then(() => {
