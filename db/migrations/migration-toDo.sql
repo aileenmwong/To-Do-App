@@ -1,4 +1,4 @@
-\connect todo_db_dev
+-- \connect todo_db_dev
 
 CREATE TABLE IF NOT EXISTS tasks (
   id BIGSERIAL PRIMARY KEY,

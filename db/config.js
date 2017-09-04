@@ -10,7 +10,7 @@ let db;
 
 if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
   db = pgp({
-    database: 'todo_db_dev',
+    database: 'safe-sierra-95740',
     port: 5432,
     host: 'localhost'
   });
