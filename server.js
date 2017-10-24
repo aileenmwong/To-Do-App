@@ -1,8 +1,8 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const path = require('path');
-const methodOverride = require('method-override')
+const express           = require('express');
+const app               = express();
+const bodyParser        = require('body-parser');
+const path              = require('path');
+const methodOverride    = require('method-override')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -22,6 +22,7 @@ app.use('/tasks', taskRoutes);
 // app.get('/', (req, res) => {
 //   res.render('to-do home', {message: 'Hello world!'});
 // });
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
